@@ -1,0 +1,96 @@
+.location {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Montserrat';
+    padding: 45px 100px 0px;      
+}
+
+.location_title {
+    color: rgba(255, 96, 96, 1);
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.location_location {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.location_title_host {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location_host_rate {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.location_collapse {
+    display: flex;
+    gap: 80px;
+}
+
+.location_collapse h3 {
+    font-size: 18px;
+    margin: auto 10px;
+}
+
+.location_collapse p {
+    margin-top: 28px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+    .location_collapse h3 {
+        margin: 12px 10px;
+    }
+
+    .location_title {
+        font-size: 28px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .location {
+        padding:0px 20px; 
+    }
+    
+    .location_title {
+        font-size: 18px;
+    }
+
+    .location_location {
+        font-size: 14px;
+    }
+
+    .location_title_host {
+        flex-direction: column;
+    }
+
+    .location_host_rate {
+        flex-direction: row-reverse;
+        margin-top: 0px;
+    }
+
+    .location_collapse {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .location_collapse h3 {
+        font-size: 13px;
+        margin: 7px 10px 10px;
+    }
+
+    .location_collapse p {
+        margin-top: 15px;
+        margin-bottom: 18px;
+    }
+}

@@ -1,0 +1,48 @@
+.error_all {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 139px;
+    font-family: 'Montserrat';
+}
+
+.error404 {
+    font-size: 288px;
+    color: rgba(255, 96, 96, 1);
+    font-weight: 700;
+    margin-top: 139px;
+    margin-bottom: 139px;
+}
+
+.error_text_1 {
+    font-size: 36px;
+    color: rgba(255, 96, 96, 1);
+    font-weight: 500;
+    margin-bottom: 139px;
+}
+
+.error_text_2 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .error_all {
+        margin-bottom: 113px;
+    }
+
+    .error404 {
+        font-size: 96px;
+        margin-top: 113px;
+        margin-bottom: 113px;
+    }
+
+    .error_text_1 {
+        font-size: 18px;
+        margin: 0px 57px 113px;
+    }
+
+    .error_text_2 {
+        font-size: 14px;
+    }
+}

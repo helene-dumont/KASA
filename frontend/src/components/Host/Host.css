@@ -1,0 +1,42 @@
+.host {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: 5px;
+    margin-top: 24px;
+}
+
+.host_name {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255, 96, 96, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.host_name p {
+    margin: 0px 10px 0px 0px;
+}
+
+.host_picture {
+    height: 64px;
+    width: 64px;
+    border-radius: 90px;
+}
+
+@media (max-width: 768px) {
+    .host {
+        margin-bottom: 13px;
+    }
+
+    .host_name {
+        font-size: 12px;
+    }
+
+    .host_picture {
+        height: 32px;
+        width: 32px;
+    }
+}
