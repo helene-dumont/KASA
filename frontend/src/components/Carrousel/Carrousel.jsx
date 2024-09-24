@@ -7,13 +7,20 @@ import "./Carrousel.css"
 function Carrousel({ pictures }) {
     const [currentSlide, setCurrentSlide] = useState(0) //Initialisation du state à 0
 
-    // Défilement photo suivante :
-    const nextSlide = () => {
-        setCurrentSlide((currentSlide + 1) % pictures.length) //Si l'image actuelle est la dernière image du tableau d'images, revenir à la première photo.
-    }
     // Défilement photo précédente : 
     const previousSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? pictures.length - 1 : currentSlide - 1) //Si l'image actuelle est la première image du tableau d'images, revenir à la dernière image.
+        setCurrentSlide(currentSlide - 1)
+        if (currentSlide <= 0) {
+            setCurrentSlide(pictures.length - 1)
+        }
+    }
+
+    // Défilement photo suivante :
+    const nextSlide = () => {
+        setCurrentSlide(currentSlide + 1)
+        if (currentSlide >= pictures.length - 1) {
+            setCurrentSlide(0)
+        }
     }
 
     const pagination = `${currentSlide + 1}/${pictures.length}`

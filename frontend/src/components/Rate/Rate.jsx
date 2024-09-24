@@ -8,16 +8,17 @@ function Rate({ rate }) {
     const filledStars = parseInt(rate) // Fonction pour convertir une chaîne de caractères en nombre
     const emptyStars = maxNumberStars - filledStars
 
-    // Combinant deux tableaux d'étoiles - le premier contenant des étoiles remplies et le second contenant des étoiles vides
+    // Concaténation de deux tableaux d'étoiles (étoiles remplies et étoiles vides)
     const rateStars = () => {
         let stars = Array(filledStars).fill().map((_, i) => (
-            //.fill remplit le tableau avec la valeur des éléments en écrasant le tableau d'origine
+            //.fill remplit le tableau en écrasant le tableau d'origine
             //.map parcourt les éléments pour remplir le tableau d'étoiles pleines
             <img src={star_active} alt="Etoiles pleines" key={i} className="rate_star" />)
         )
 
-        stars = stars.concat(Array(emptyStars).fill().map((_, i) =>
-        ( //jonction du tableau "stars" avec la tableau d'étoiles vides
+        //jonction d'un tableau d'étoiles vides au tableau "stars"
+        stars = stars.concat(Array(emptyStars).fill().map((_, i) => (
+
             <img src={star_inactive} alt="Etoiles vides" key={i + filledStars} className="rate_star" />))
         )
 

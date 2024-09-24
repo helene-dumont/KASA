@@ -20,13 +20,13 @@ function Collapse({ title, content }) { // On définit 2 props en arguments
             </div>
 
             <div className={`collapse_content ${isOpen ? "expand" : "collapsed"}`}>
-                {Array.isArray(content) ? ( // Condition : si contenu est ouvert et est un tableau, on applique méthode .map pour générer l'affichage sous forme de liste ("Equipement"). 
+                {Array.isArray(content) ? ( // Condition : si contenu est ouvert et est un tableau, on applique méthode .map pour générer l'affichage sous forme de liste 
                     <ul className="collapse_list">
                         {content.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}
                     </ul>
-                ) : ( // Sinon affichage sous forme d'une balise <p> ("Description").
+                ) : ( // Sinon affichage sous forme d'une balise <p> 
                     <p className="collapse_content">{content}</p>
                 )}
             </div>
