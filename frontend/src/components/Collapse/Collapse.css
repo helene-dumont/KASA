@@ -29,14 +29,15 @@
 
 .collapse_content {
     font-size: 18px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
     line-height: 1.5;
     background-color: rgba(246, 246, 246, 0.45);
     border-radius: 0px 0px 5px 5px;
     overflow: hidden;
     z-index: 1;    
+}
+
+.collapse_content p {
+    margin-left: 20px;
 }
 
 .collapse_list {
@@ -130,7 +131,7 @@
 
     .collapse_content {
         font-size: 12px;
-        margin: 10px 5px;
+        margin-bottom: 15px;
     }
 
     .collapse_list {
